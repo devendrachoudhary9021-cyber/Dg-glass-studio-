@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DG Glass Studio | Glass, Mirror, Aluminium & UPVC</title>
+<meta name="description" content="DG Glass Studio - Premium glass, mirrors, partitions, aluminium and UPVC work in Old Alwal, Secunderabad.">
+<style>
+:root{
+  --bg:#07111b; --panel:#0d1b28; --text:#eef7ff; --muted:#a9bac9;
+  --line:rgba(255,255,255,.12); --accent:#48c7ff; --accent2:#8de3ff;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:50;background:rgba(7,17,27,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:22px;font-weight:800;letter-spacing:.4px}.logo span{color:var(--accent)}
+.links{display:flex;gap:22px;font-size:14px;color:#d9e7f1}.links a:hover{color:var(--accent)}
+.hero{min-height:650px;display:grid;place-items:center;position:relative;overflow:hidden;background:
+linear-gradient(90deg,rgba(4,12,20,.9),rgba(4,12,20,.42)),
+url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1800&q=85') center/cover}
+.hero:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 75% 30%,rgba(72,199,255,.18),transparent 35%)}
+.hero .container{position:relative;z-index:2;padding:90px 0}
+.badge{display:inline-block;border:1px solid rgba(72,199,255,.45);background:rgba(72,199,255,.09);color:var(--accent2);padding:8px 14px;border-radius:999px;font-size:13px}
+h1{font-size:clamp(42px,7vw,82px);line-height:1.02;margin:20px 0;max-width:780px}
+h1 span{color:var(--accent)}
+.hero p{max-width:650px;color:#d0dde7;font-size:18px}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;padding:14px 21px;border-radius:10px;font-weight:700}
+.primary{background:var(--accent);color:#041019}.secondary{border:1px solid var(--line);background:rgba(255,255,255,.05)}
+section{padding:82px 0}.eyebrow{color:var(--accent);font-weight:800;letter-spacing:1.4px;font-size:12px}
+h2{font-size:clamp(32px,4vw,50px);margin:8px 0 15px}.lead{color:var(--muted);max-width:720px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:32px}
+.card{background:linear-gradient(145deg,rgba(255,255,255,.07),rgba(255,255,255,.025));border:1px solid var(--line);border-radius:18px;padding:24px;transition:.25s}
+.card:hover{transform:translateY(-5px);border-color:rgba(72,199,255,.55)}
+.icon{font-size:32px}.card h3{margin:14px 0 7px}.card p{color:var(--muted);margin:0}
+.dark{background:#091722}.gallery{display:grid;grid-template-columns:1.2fr .8fr .8fr;grid-auto-rows:230px;gap:14px;margin-top:30px}
+.pic{border-radius:18px;overflow:hidden;border:1px solid var(--line);background:#111}
+.pic:first-child{grid-row:span 2}.pic img{width:100%;height:100%;object-fit:cover;display:block;transition:.35s}.pic:hover img{transform:scale(1.05)}
+.why{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.whybox{padding:28px;border:1px solid var(--line);border-radius:20px;background:rgba(255,255,255,.035)}
+.points{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px}.point{padding:15px;border-radius:12px;background:rgba(72,199,255,.07);border:1px solid rgba(72,199,255,.12)}
+.cta{background:linear-gradient(135deg,#0c2635,#07111b);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:25px}.contactbox{padding:28px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.035)}
+.info{margin:18px 0;padding:14px 0;border-bottom:1px solid var(--line);color:#d8e5ee}.info b{display:block;color:var(--accent);font-size:12px;letter-spacing:1px}
+form{display:grid;gap:12px}input,textarea{padding:14px;border-radius:10px;border:1px solid var(--line);background:#07111b;color:white;font:inherit}textarea{min-height:110px}
+footer{padding:30px 0;color:#94a8b8;text-align:center}
+.float{position:fixed;right:18px;bottom:18px;z-index:60;background:#25D366;color:white;padding:15px 18px;border-radius:999px;font-weight:800;box-shadow:0 10px 35px rgba(0,0,0,.35)}
+@media(max-width:800px){.links{display:none}.grid{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr;grid-auto-rows:180px}.why,.contact{grid-template-columns:1fr}.hero{min-height:600px}.points{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="container nav">
+    <a class="logo" href="#home">DG <span>GLASS STUDIO</span></a>
+    <div class="links"><a href="#about">About</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></div>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+ <div class="container">
+   <div class="badge">PREMIUM GLASS & INTERIOR SOLUTIONS</div>
+   <h1>Where <span>Glass</span> Meets Modern Design.</h1>
+   <p>Premium glass, mirrors, partitions, aluminium and UPVC work for homes, offices and commercial spaces.</p>
+   <div class="btns">
+     <a class="btn primary" href="https://wa.me/917665908696?text=Hello%20DG%20Glass%20Studio%2C%20I%20want%20a%20quotation.">Get Free Quote</a>
+     <a class="btn secondary" href="tel:+917665908696">Call Now</a>
+   </div>
+ </div>
+</header>
+
+<section id="about">
+ <div class="container why">
+  <div>
+   <div class="eyebrow">ABOUT DG GLASS STUDIO</div>
+   <h2>Beautiful Spaces. Quality Work.</h2>
+   <p class="lead">We provide customised glass and aluminium solutions with a focus on modern design, clean finishing and customer satisfaction.</p>
+   <div class="points">
+    <div class="point">✓ Custom Solutions</div><div class="point">✓ Premium Finishing</div>
+    <div class="point">✓ Residential & Commercial</div><div class="point">✓ Free Quotation</div>
+   </div>
+  </div>
+  <div class="whybox">
+   <div class="icon">🏢</div>
+   <h3>Serving Hyderabad</h3>
+   <p>Based in Old Alwal, Secunderabad. Contact us for glass, mirror, partition, aluminium and UPVC requirements.</p>
+   <p><b>📍 Location:</b><br>Old Alwal, Secunderabad, Hyderabad</p>
+   <a class="btn primary" href="#contact">Contact Us</a>
+  </div>
+ </div>
+</section>
+
+<section class="dark" id="services">
+ <div class="container">
+  <div class="eyebrow">OUR SERVICES</div>
+  <h2>Everything You Need in Glass & More</h2>
+  <div class="grid">
+   <div class="card"><div class="icon">🪟</div><h3>Premium Glass Work</h3><p>Custom glass solutions for residential and commercial spaces.</p></div>
+   <div class="card"><div class="icon">🪞</div><h3>Designer Mirrors</h3><p>Modern mirrors for homes, bathrooms, interiors and businesses.</p></div>
+   <div class="card"><div class="icon">🚪</div><h3>Glass Partitions</h3><p>Stylish office, bathroom and interior glass partitions.</p></div>
+   <div class="card"><div class="icon">🏗️</div><h3>Aluminium Work</h3><p>Quality aluminium solutions designed for durability and finishing.</p></div>
+   <div class="card"><div class="icon">🏠</div><h3>UPVC Work</h3><p>Modern UPVC solutions for homes and commercial properties.</p></div>
+   <div class="card"><div class="icon">✨</div><h3>Custom Projects</h3><p>Tell us your requirement and get a customised solution.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="gallery">
+ <div class="container">
+  <div class="eyebrow">OUR WORK</div>
+  <h2>Modern Design Inspiration</h2>
+  <p class="lead">A glimpse of the kind of premium glass, mirror and modern interior solutions we can help create.</p>
+  <div class="gallery">
+   <div class="pic"><img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=85" alt="Modern interior glass"></div>
+   <div class="pic"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=85" alt="Modern home interior"></div>
+   <div class="pic"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=900&q=85" alt="Designer mirror interior"></div>
+   <div class="pic"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85" alt="Premium interior"></div>
+   <div class="pic"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85" alt="Modern room"></div>
+  </div>
+ </div>
+</section>
+
+<section class="cta">
+ <div class="container">
+  <div class="eyebrow">HAVE A PROJECT?</div>
+  <h2>Let's Build Something Beautiful.</h2>
+  <p class="lead">Send us your requirement on WhatsApp and get in touch with DG Glass Studio.</p>
+  <div class="btns"><a class="btn primary" href="https://wa.me/917665908696?text=Hello%20DG%20Glass%20Studio%2C%20I%20want%20a%20quotation.">WhatsApp Us</a></div>
+ </div>
+</section>
+
+<section id="contact">
+ <div class="container">
+  <div class="eyebrow">CONTACT US</div>
+  <h2>Get Your Free Quote</h2>
+  <div class="contact">
+   <div class="contactbox">
+    <div class="info"><b>PHONE / WHATSAPP</b>+91 7665908696</div>
+    <div class="info"><b>LOCATION</b>Old Alwal, Secunderabad, Hyderabad</div>
+    <div class="info"><b>SERVICES</b>Glass • Mirrors • Partitions • Aluminium • UPVC</div>
+    <a class="btn primary" href="tel:+917665908696">Call +91 7665908696</a>
+   </div>
+   <div class="contactbox">
+    <form onsubmit="sendWhatsApp();return false;">
+     <input id="name" placeholder="Your Name" required>
+     <input id="phone" placeholder="Your Phone Number" required>
+     <textarea id="msg" placeholder="Tell us about your requirement"></textarea>
+     <button class="btn primary" type="submit" style="border:0;cursor:pointer">Send on WhatsApp</button>
+    </form>
+   </div>
+  </div>
+ </div>
+</section>
+
+<footer>© 2026 DG Glass Studio • Old Alwal, Secunderabad</footer>
+<a class="float" href="https://wa.me/917665908696" aria-label="WhatsApp">💬 WhatsApp</a>
+
+<script>
+function sendWhatsApp(){
+ const n=document.getElementById('name').value;
+ const p=document.getElementById('phone').value;
+ const m=document.getElementById('msg').value;
+ const text=encodeURIComponent(`Hello DG Glass Studio!\n\nName: ${n}\nPhone: ${p}\nRequirement: ${m}`);
+ window.open('https://wa.me/917665908696?text='+text,'_blank');
+}
+</script>
+</body>
+</html>
